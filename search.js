@@ -10,7 +10,7 @@ $("#search").on("keyup", function (event) {
             .then((data) => {
                 filter_book = []
                 let regex = new RegExp(txt, "i") // ТиПа ВОТак оНо Все Равно СчиТаЕт 
-                for (let bb of data) {
+                for (let bb of data) { 
                     if (regex.test(bb["name"].toLowerCase()) || regex.test(bb["author"].toLowerCase()) || regex.test(bb["genre"].toLowerCase())) {
                         filter_book.push(bb)
                     }
