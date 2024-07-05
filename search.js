@@ -16,7 +16,7 @@ $("#search").on("keyup", function (event) {
                     }
                 }
                 localStorage.setItem("filterbook", JSON.stringify(filter_book))
-                window.location.href = "https://sazep.github.io/HELP/html/filter_book.html"
+                window.location.href = "https://sazep.github.io/HELP/html/filter_book.html" 
             })
     }
 })
