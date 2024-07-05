@@ -1,0 +1,871 @@
+/* кольора */
+:root {
+  /* Основний темний колір */
+  --main-dark: #512DA8;
+  /* Основний світлий колір */
+  --main-text: #D1C4E9;
+  /* колір акценту */
+  --color-accent: #536DFE;
+  /* колір основного тексту */
+  --main-light: #212121;
+  /*  колір другорядного тексту */
+  --other-text: #757575;
+  /* колір роздільника */
+  --color-separator: #BDBDBD;
+  --headline-color: #F9F9F9;
+  --text-color: #7E7E7E;
+  --bg: #1C1C1C;
+  --footer-bg: #161616;
+  --secondary: #2E2E2E;
+  --footer-border: #3E3E3E;
+  --gray-border-hover: #505050;
+  --gray-menu-button: #7E7E7E;
+  --gray-menu-button-hover: #232323;
+  --navbar-height: 64px;
+  --gray-text-hover: #8F8F8F;
+  --gray-icon: #A0A0A0;
+  --footer-width: 64rem;
+}
+
+/* загальні стилі для всіє сторінки */
+body {
+  position: relative;
+  background-color: var(--main-dark);
+  color: var(--main-text);
+  overflow: auto;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 18rem;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+header,main,footer{
+  position: relative;
+  width: 100%;
+}
+main{
+  min-height: 500px;
+}
+/*  */
+/* шрифт */
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../style/LXGWWenKaiMonoTC-Bold.ttf");
+}
+/* шапка сайту */
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 2%;
+  width: 98%;
+
+
+}
+/* заголовок на сторінці маін */
+.neon {
+  color: #f5f5f5;
+  text-shadow:
+  0px -2px 4px #EDEAF9,
+  0px -2px 10px #f2bee3,
+  0px -10px 20px#ac7dd3,
+  0px -20px 40px #7285c9;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 100px; 
+}
+
+header img {
+  margin-right: 4%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 3px 3px 2px black;
+  border-radius: 32px;
+}
+/*  */
+
+/* основна частина */
+main h1{
+  color: var(--main-text);
+  text-align: center;
+  text-decoration: none;
+ }
+
+/* зменшуємо маін, щоб відступити збоку для навігації */
+main {
+  width: 75%;
+  left: 18%;
+}
+
+
+/*  */
+
+/* навігація */
+nav,.box{
+  position: fixed;
+  width: 20%;
+  height: 200px;
+  top: 25%;
+  left: -5%;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  
+}
+
+nav a{
+  text-decoration: none;
+  display: flex;
+  color: var(--main-text);
+}
+
+.container-1{
+  position: relative;
+  width: 30%;
+  align-items: center;
+ 
+  
+}
+
+nav a{
+  text-decoration: none;
+  display: flex;
+  color: var(--main-text);
+}
+
+.container-1{
+  position: relative;
+  width: 30%;
+  border-radius: 5px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  margin-top: 1%;
+  margin-top: 1%;
+  box-shadow: 3px 3px 2px black;
+  margin-bottom: 1%;
+}
+
+
+.before, .before1{
+  display: none;
+}
+nav i{
+  color: var(--main-text);
+  font-size: 30px;
+  position: relative;
+  top:20%;
+  left:25%;
+}
+.icon-1{
+  position: relative;
+  left: 20%;
+ 
+}
+nav input{
+  width: 0;
+ 
+  background-color: var(--other-text);
+  color: var(--main-text);
+  height: 0;
+  border-radius: 5px;
+  position: relative;
+  top:5%;
+  left: 23%;
+  z-index: -1;
+}
+.icon-1{
+  position: relative;
+  left: 20%;
+ 
+}
+nav input{
+  width: 0;
+ 
+  background-color: var(--other-text);
+  color: var(--main-text);
+  height: 0;
+  border-radius: 5px;
+  position: relative;
+  top:5%;
+  left: 23%;
+  z-index: -1;
+}
+
+nav .container-1:first-child:hover > input{
+ z-index: 11;
+  width: 70%;
+  height: 50%;
+  transition: 2s;
+
+}
+nav .container-1:first-child:hover{
+   margin-left: 55%;
+   width: 90%;
+   transition: 2s;
+ 
+ }
+ nav .container-1:first-child:hover > .icon{
+  margin-left: -18%;
+  transition: 2s;
+ }
+ .container-1:hover>i{
+  color: var(--color-accent);
+  transition: 1s;
+ }
+
+nav .container-1:first-child:hover > input{
+ z-index: 11;
+  width: 70%;
+  height: 50%;
+  transition: 2s;
+
+}
+nav .container-1:first-child:hover{
+   margin-left: 55%;
+   width: 90%;
+   transition: 2s;
+ 
+ }
+ nav .container-1:first-child:hover > .icon{
+  margin-left: -18%;
+  transition: 2s;
+ }
+ .container-1:hover>i{
+  color: var(--color-accent);
+  transition: 1s;
+ }
+
+
+/* КІНЕЦЬ КІНЕЦЬ КІНЕЦЬ СТИЛІ ДЛЯ НАВІГАЦІЇ*/
+
+
+/* стилі для карточки книжки на сторінці index.html */
+#new,
+#popular,
+#allbooks {
+  position: relative;
+  width: 100%;
+  background-color: var(--main-dark);
+  border-radius: 40px 0 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+#allbooks{
+  flex-direction: column;
+ align-items: center;
+}
+.icon-plus,
+.icon-minus{
+  position: relative;
+  left: 93%;
+  top: 60px;
+  font-size: 35px;
+  color: black;
+  z-index: 10;
+}
+/* ПОЧАТОК СТИЛІ ДЛЯ ALL-BOOKS */
+.add-book{
+  position: relative;
+  width: 70%;
+  margin-bottom: 2%;
+}
+.onebook{
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  background-color: var(--color-separator);
+  padding: 2%;
+  color: var(--main-light);
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.cat{
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 70%; 
+  white-space: nowrap; 
+}
+
+.infobook{
+ position: relative;
+ left: 2%;
+ width: 50%;
+ font-size: 1.2em;
+}
+
+
+.pages, .pages1{
+  display: flex;
+  width: fit-content;
+  position: relative;
+  font-size: xx-large;
+  left:40%;
+  top: 50%;
+  padding: 3%;
+  height: 40px;
+  background-color: var(--main-light);
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color:var(--gray-menu-button)
+}
+
+.before,.before1{
+  z-index: -1;
+  position: relative;
+  left:-20%;
+  z-index: -1;
+}
+.next, .next1{
+  position: relative;
+  right:-20%;
+}
+
+.page,.page1{
+  position: relative;
+ 
+}
+#allbooks{
+  flex-direction: column;
+}
+.onebook img {
+  width: 40%;
+  height: 40%;
+  margin-left: 2%;;
+  box-shadow: 3px 3px 3px 0 var(--main-light);
+}
+#neon {
+  color: #f5f5f5;
+  text-shadow:
+  0px -2px 4px #EDEAF9,
+  0px -2px 10px #f2bee3,
+  0px -10px 20px#ac7dd3,
+  0px -20px 40px #7285c9;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 100px; 
+}
+.book {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.book img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 3px 0 var(--main-light);
+}
+
+.back,
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.7s linear;
+}
+
+.book:hover>.front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.book:hover>.back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(128, 10, 224, 1) 50%);
+  transform: perspective(600px) rotateY(180deg);
+  color: #f5f5f5;
+}
+
+.center {
+  text-align: center;
+}
+.similar-book{
+  position: relative;
+  left: 15%;  
+}
+.id{
+  display: none;
+}
+
+
+/* ПОЧАТОК БАНЕР *//* ПОЧАТОК БАНЕР *//* ПОЧАТОК БАНЕР *//* ПОЧАТОК БАНЕР */
+.slider {
+  position: relative;
+  width: 60%;
+  margin-left: 25%;
+  height: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+ 
+}
+
+.slides {
+  position: relative;
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+}
+
+
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide.one {
+  background: rgb(182, 19, 109);
+}
+.slide.two {
+  background: rgb(255, 64, 64);
+}
+.slide.three {
+  background: rgb(11, 173, 188);
+}
+.slide.four {
+  background: rgb(11, 188, 14);
+}
+.slide.five {
+  background: rgb(173, 11, 188);
+}
+@keyframes sliding {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+/* КІНЕЦЬ БАНЕРУ */
+
+/* футер */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+footer {
+  position: relative;
+  background: var(--footer-bg);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+*::selection {
+  background: var(--main-text);
+  color: var(--footer-bg);
+}
+
+.footer-wraper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  max-width: var(--footer-width);
+  width: 100%;
+  margin: 0% auto;
+  padding: 1%;
+ 
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+ align-items: center;
+ justify-items: center;
+  margin-left: 10%;
+}
+
+.footer-logo-column {
+  display: flex;
+  margin-bottom: -6%;
+  position: relative;
+  width: 100%;
+  margin-left: 10%;
+}
+
+.footer-logo {
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--main-dark);
+  width: 20%;
+}
+
+.footer-name {
+  position: relative;
+  width: 40%;
+  left: -20%;
+  top: -10%;
+  font-size: 2rem;
+}
+
+
+
+.footer-logo-column a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer-logo-column svg {
+  width: 50%;
+  stroke: var(--main-dark);
+  /* background-color: var(--color-accent); */
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  right: 50%;
+  top: -15%;
+}
+
+.footer-logo-column svg:hover {
+  stroke: var(--color-accent);
+}
+
+.link-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex-grow: 1;
+  margin-bottom: 0%;
+  width: 100%;
+}
+
+.link-columns>div {
+  flex-grow: 1;
+  display: flex;
+  gap: 2rem;
+}
+
+.link-columns>div>section {
+  min-width: 8rem;
+  width: fit-content;
+}
+
+.link-columns ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.link-columns ul a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: ll 0.2s ease-in-out;
+}
+
+.link-columns ul a:hover {
+  color: var(--headline-color);
+}
+
+.link-columns h3 {
+  color: var(--headline-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-bottom {
+  margin-top: 0%;
+  width: 100%;
+  color: var(--text-color);
+  position: relative;
+}
+
+.footer-bottom-wraper {
+  max-width: var(--footer-width);
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid var(--footer-border);
+}
+
+.footer-bottom small {
+  font-size: 1rem;
+  display: inline;
+  white-space: nowrap;
+}
+
+.footer-bottom>small {
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .link-columns>div>section {
+    min-height: auto;
+  }
+}
+
+/* стилі для книжки на сторінці (ABOUT_BOOK)*/
+/* .about-book-body {
+  margin-left: 5%;
+  margin-right: 10%;
+} */
+
+/* отдельно для возраста */
+.color-years-black {
+  display: inline-block;
+  font-weight: 700;
+  padding: 0 4px;
+  border: 0;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.84);
+  word-spacing: -2px;
+  color: var(--headline-color);
+}
+
+/* использую чтоб просто красиво отделить */
+article {
+  width: 100%;
+  margin: 30px;
+  border-bottom: 1px solid var(--gray-menu-button);
+  display: flex;
+}
+.div-img{
+  width: 90%;
+}
+/* обложка книги(не трогайте сломаете) */
+.div-img img {
+  width: 50%;
+  margin-left: 5%;
+  
+}
+
+/* рейинг книги (звездочки) */
+.rating {
+  display: flex;
+  align-items: center;
+  color: var(--gold);
+}
+
+.rating h1 {
+  font-size: 32px;
+  color: var(--gold);
+}
+
+/* инфнормация про книгу */
+.about-book {
+  width: 70%;
+  margin-left: -30%;
+  margin-top: -10%;
+}
+#book-title{
+  font-size: 4rem;
+  margin: 0;
+  margin-left: -50%;
+}
+/* рекомендованые книги (НАДО ХЕЛП ЕГОР) */
+#similar-book{
+  width: 100%;
+  position: relative;
+  background-color: var(--main-dark);
+  border-radius: 40px 0 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3%;
+}
+
+.similar-book img {
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+/* коментарии */
+.comment-section {
+  margin: 30px
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.comment-form textarea {
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--color-separator);
+  background-color: var(--bg);
+  color: var(--headline-color);
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* кнопка коментаря */
+.comment-form button {
+  padding: 10px;
+  font-size: 16px;
+  color: var(--color-separator);
+  background-color: var(--bg);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: var(--footer-border);
+}
+
+/* мб доделаю потом надо js типа выделения в коментарях */
+.comment-editor {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-editor span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--bg);
+  margin-right: 10px;
+}
+
+.comment-editor span:hover {
+  background-color: var(--footer-border);
+}
+
+.comment-editor svg {
+  width: 20px;
+  height: 20px;
+}
+
+.comment-section {
+  margin-bottom: 20px;
+}
+
+#user-comments {
+  margin-top: 20px;
+}
+
+.comment {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+
+.comment-text {
+  overflow: hidden;
+  word-wrap: break-word
+}
+
+
+/* стилі для сторінки читати книжку read.html */
+.read{
+  width: 80%;
+  display: flex;
+  position: relative;
+  left: -2%;
+  background-color: var(--color-separator);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  width: fit-content;
+  border: 30px rgb(130, 130, 130) inset;
+  border-radius: 20px;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: var(--footer-bg);
+  padding: 3% 3% 3% 3%;
+  margin-bottom: 1%;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+/* read down book button */
+button{
+  margin-bottom: 2%;
+  width: fit-content;
+  height: 4rem;
+  font-size: 1.5em;
+  padding: 2%;
+  margin-right: 2%;
+  text-align: center;
+  align-items: center;
+  background-color: var(--footer-border);
+  color:var(--main-text);
+  text-shadow: 1px 1px 1px var(--color-accent),
+  2px 2px 1px var(--color-accent),
+  3px 3px 1px var(--color-accent);
+  border-radius: 25px;
+  border: #512DA8 3px groove;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+button:focus{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: 1s;
+}
